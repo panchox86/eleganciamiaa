@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toque de Elegancia y Sofisticación - Vestidos y Maquillaje</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de Tailwind para usar el color Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#A78BFA', // Un tono de púrpura suave para la marca
+                        secondary: '#F3E8FF', // Un lavanda muy claro
+                        accent: '#FCD34D', // Un dorado suave para acentos
+                        dark: '#1F2937', // Gris oscuro para texto principal
+                        light: '#F9FAFB', // Blanco roto para fondos
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos personalizados para la fuente Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB; /* Fondo blanco roto */
+            color: #1F2937; /* Color de texto principal */
+        }
+
+        /* Estilo para el efecto hover en botones */
+        .btn-primary {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: #8B5CF6; /* Un púrpura más oscuro al pasar el ratón */
+            transform: translateY(-2px);
+        }
+
+        /* Estilo para tarjetas con sombra y esquinas redondeadas */
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            border-radius: 0.75rem; /* rounded-xl */
+        }
+
+        /* Estilo para imágenes con esquinas redondeadas */
+        img {
+            border-radius: 0.75rem; /* rounded-xl */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Sección de Encabezado (Hero) -->
+    <header class="relative bg-gradient-to-r from-primary to-purple-400 text-white py-16 md:py-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Imagen de fondo que sugiere elegancia, con un overlay para el texto -->
+            <img src="https://placehold.co/1920x800/6B46C1/FFFFFF?text=Elegancia+y+Estilo" alt="Fondo elegante con vestido y maquillaje" class="w-full h-full object-cover opacity-70">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                Tu Toque de Elegancia y Sofisticación
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Transformamos tus sueños en realidad con vestidos deslumbrantes y maquillaje impecable para cada ocasión especial.
+            </p>
+            <a href="#contacto" class="btn-primary bg-accent text-dark font-semibold py-3 px-8 rounded-full text-lg hover:bg-yellow-300 transition duration-300 ease-in-out">
+                Agenda tu Asesoría Personalizada
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">Nuestros Servicios Exclusivos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta de Vestidos -->
+                <div class="card bg-white p-8 text-center">
+                    <img src="https://placehold.co/400x300/F3E8FF/A78BFA?text=Vestidos+de+Ensueño" alt="Vestidos de novia y fiesta" class="w-full h-48 object-cover mb-6 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Vestidos de Ensueño</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Desde la alta costura nupcial hasta los vestidos de fiesta más glamurosos, te ofrecemos una selección curada para cada momento inolvidable.
+                    </p>
+                    <a href="#contacto" class="text-primary hover:underline font-medium">Ver Colección &rarr;</a>
+                </div>
+
+                <!-- Tarjeta de Maquillaje Profesional -->
+                <div class="card bg-white p-8 text-center">
+                    <img src="https://placehold.co/400x300/F3E8FF/A78BFA?text=Maquillaje+Profesional" alt="Maquillaje profesional para eventos" class="w-full h-48 object-cover mb-6 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Maquillaje Profesional</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Resalta tu belleza natural con un maquillaje diseñado exclusivamente para ti, utilizando productos de alta calidad para un acabado perfecto y duradero.
+                    </p>
+                    <a href="#contacto" class="text-primary hover:underline font-medium">Descubre tu Look &rarr;</a>
+                </div>
+
+                <!-- Tarjeta de Asesoría de Imagen -->
+                <div class="card bg-white p-8 text-center">
+                    <img src="https://placehold.co/400x300/F3E8FF/A78BFA?text=Asesoría+Personalizada" alt="Asesoría de imagen personalizada" class="w-full h-48 object-cover mb-6 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Asesoría Personalizada</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Te guiamos en la elección del vestido y el maquillaje ideal que complementen tu figura, personalidad y el tipo de evento.
+                    </p>
+                    <a href="#contacto" class="text-primary hover:underline font-medium">Conoce Más &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Por Qué Elegirnos" -->
+    <section id="porque-elegirnos" class="py-16 md:py-24 bg-secondary">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-dark">¿Por Qué Elegir Nuestro Toque?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-left">
+                    <p class="text-lg text-gray-800 mb-6 leading-relaxed">
+                        En **[Nombre de tu Negocio]**, entendemos que cada mujer es única y cada ocasión, especial. Nuestro compromiso es brindarte no solo productos, sino una experiencia transformadora.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 text-lg space-y-3">
+                        <li><span class="font-semibold text-primary">Selección Exclusiva:</span> Vestidos y productos de maquillaje de las mejores calidades.</li>
+                        <li><span class="font-semibold text-primary">Expertos en Estilo:</span> Asesoría personalizada para realzar tu belleza.</li>
+                        <li><span class="font-semibold text-primary">Atención al Detalle:</span> Cada aspecto de tu look es cuidadosamente planificado.</li>
+                        <li><span class="font-semibold text-primary">Confianza y Radiante:</span> Nuestro objetivo es que te sientas espectacular.</li>
+                    </ul>
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://placehold.co/500x400/A78BFA/FFFFFF?text=Experiencia+Exclusiva" alt="Mujer recibiendo asesoría de estilo" class="rounded-xl shadow-lg w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios/Galería (puedes elegir una o combinar) -->
+    <section id="testimonios" class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">Lo Que Dicen Nuestras Clientes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="card bg-white p-6 md:p-8">
+                    <p class="text-gray-700 italic mb-4">
+                        "Encontré el vestido de mis sueños y el maquillaje perfecto. La asesoría fue increíble, me sentí escuchada y el resultado superó todas mis expectativas. ¡Realmente un toque de elegancia!"
+                    </p>
+                    <p class="font-semibold text-primary">- Ana G., Novia Feliz</p>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="card bg-white p-6 md:p-8">
+                    <p class="text-gray-700 italic mb-4">
+                        "Necesitaba un look para una gala y no sabía por dónde empezar. Me ayudaron a elegir un vestido espectacular y un maquillaje que me hizo sentir la más sofisticada de la noche. ¡Gracias!"
+                    </p>
+                    <p class="font-semibold text-primary">- Laura M., Invitada Radiante</p>
+                </div>
+                <!-- Aquí podrías añadir más testimonios o una sección de galería de fotos -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Llamada a la Acción Final -->
+    <section id="cta-final" class="bg-primary text-white py-16 md:py-20 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                ¿Lista para Brillar con Elegancia y Sofisticación?
+            </h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Permítenos ser parte de tu momento especial. Agenda una cita y descubre cómo podemos realzar tu belleza.
+            </p>
+            <a href="#contacto" class="btn-primary bg-accent text-dark font-semibold py-3 px-8 rounded-full text-lg hover:bg-yellow-300 transition duration-300 ease-in-out">
+                Contáctanos Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-16 md:py-24 bg-secondary">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">Contáctanos</h2>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-lg text-center mb-6 text-gray-700">
+                    Estamos emocionados de ayudarte a encontrar el look perfecto.
+                </p>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="tu@ejemplo.com">
+                    </div>
+                    <div>
+                        <label for="telefono" class="block text-gray-700 text-sm font-bold mb-2">Teléfono (Opcional):</label>
+                        <input type="tel" id="telefono" name="telefono" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="+XX XXX XXX XXXX">
+                    </div>
+                    <div>
+                        <label for="mensaje" class="block text-gray-700 text-sm font-bold mb-2">Mensaje / Tipo de Asesoría:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Me gustaría una asesoría para mi boda..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary bg-primary text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-purple-700 transition duration-300 ease-in-out">
+                            Enviar Solicitud
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-8 text-center text-gray-600">
+                    <p>También puedes contactarnos directamente:</p>
+                    <p class="font-semibold">Teléfono: <a href="tel:+1234567890" class="text-primary hover:underline">+1 (234) 567-890</a></p>
+                    <p class="font-semibold">Email: <a href="mailto:info@tumarca.com" class="text-primary hover:underline">info@tumarca.com</a></p>
+                    <p class="font-semibold">Dirección: Calle Ficticia 123, Ciudad, País</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white py-8 text-center">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 Tu Toque de Elegancia y Sofisticación. Todos los derechos reservados.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Política de Privacidad</a>
+                <span class="text-gray-400">|</span>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
